@@ -1,0 +1,26 @@
+.bar{
+    width: 2px;
+    height: 70px;
+    background: linear-gradient(var(--light1), var(--secondarycolor));
+}
+.icon{
+    padding: 5px;
+    border: 4px dashed var(--secondarycolor);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+.feature1-card ul{
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0;
+}
+.feature1-card li{
+    margin-bottom: 10px;
+    font-weight: 600;
+    list-style-image: url('../../images/double-check.png');
+    color: rgb(41, 41, 41);
+}

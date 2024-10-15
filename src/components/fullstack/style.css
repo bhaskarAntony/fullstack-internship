@@ -1,0 +1,51 @@
+.choose{
+    background: var(--dark-color);
+}
+.choose .row{
+    margin-top: 80px !important;
+}
+.choose-card {
+    background: var(--primary-color);
+    border-radius: 10px;
+    position: relative;
+}
+.choose-card .title{
+    /* background-color: var(--dark-color);
+    padding: 10px;
+    color: var(--primary-color);
+    transform: translateY(-50px);
+    text-align: center;
+    border-radius: 20px; */
+}
+.choose-card .techs .tech-btn{
+    border: none;
+    padding: 5px 15px;
+    border-radius: 100px;
+    background-color: var(--light2);
+    border: 2px solid var(--dark-color);
+}
+.choose-card .techs .tech-btn:hover{
+    background-color: var(--dark-color);
+    color: var(--light2);
+}
+.view{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    cursor: pointer;
+    border: 3px solid var(--dark-color);
+    border-radius: 100px;
+    right: -10px;
+    top: -5px;
+
+}
+.view:hover{
+   background: var(--dark-color);
+}
+.view:hover i{
+    color: var(--primary-color) !important;
+}
