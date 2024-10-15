@@ -15,14 +15,14 @@ function Home() {
             <div className="row">
                 <div className="col-md-6 mb-2">
                     <div className="card p-3 light-bg2 mb-3 border-0 h-100">
-                        <p className="fs-3 fw-6">Access to exclusive full-stack development resources (tutorials, e-books, etc.).
+                        <p className="fs-5 fw-5">Access to exclusive full-stack development resources (tutorials, e-books, etc.).
                         </p>
                     </div>
                 </div>
 
                 <div className="col-md-6 mb-2">
                     <div className="card p-3 h-100 d-flex align-items-center justify-content-center light-bg1 border-0">
-                        <p className="fs-3 fw-6">Career counseling sessions for resume building and interview preparation.
+                        <p className="fs-5 fw-5">Career counseling sessions for resume building and interview preparation.
                         </p>
                     </div>
                 </div>

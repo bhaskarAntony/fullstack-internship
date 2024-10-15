@@ -28,6 +28,41 @@ function Features() {
             ]
         }
     ]
+
+
+    const data2 = [
+        {
+            title:'Real-World Projects',
+            image:'https://cdn-icons-png.flaticon.com/128/16803/16803859.png',
+            points:[
+                'Hands-on projects for live clients or one of our 390+ partner companies',
+                'Apply the full-stack skills from your chosen track to real-world problems, developing scalable and efficient solutions.'
+            ]
+        },
+        {
+            title:'Team Collaboration',
+            points:[
+                'Collaborate in teams, applying Agile methodologies, code reviews, and using version control systems like Git.'
+            ],
+            image:'https://cdn-icons-png.flaticon.com/128/17986/17986619.png'
+        },
+        {
+            title:'Mentorship & Feedback',
+            points:[
+                'Regular one-on-one mentorship with industry professionals.',
+                'Project reviews, feedback, and career guidance to refine your work.',
+                'Build a professional portfolio of 5 full-stack projects, which can be showcased to potential employers during placement.'
+            ],
+            image:'https://cdn-icons-png.flaticon.com/128/9123/9123820.png'
+        },
+        {
+            title:'Portfolio Building',
+            points:[
+                'Build a professional portfolio of 5 full-stack projects, which can be showcased to potential employers during placement.'
+            ],
+            image:'https://cdn-icons-png.flaticon.com/128/9249/9249511.png'
+        }
+    ]
   return (
     <section className='features'>
         <center className='p-2 p-md-5'>
@@ -59,6 +94,38 @@ function Features() {
                     ))
                 }
             </div>
+        </section>
+
+        <center className='p-2 p-md-5'>
+        <div className="bar my-4"></div>
+        <div className="icon">
+        <i class="bi bi-2-circle-fill fs-1 text-main"></i>
+        
+        </div>
+        <div className="bar my-4"></div>
+        <h1 className="fs-3 fw-bold mb-5">Internship Program <span className="text-main2">(3 months)</span></h1>
+        </center>
+        <section className="container-fluid p-3 p-md-5 feature2">
+                <div className="row">
+                    {
+                        data2.map((item,  index)=>(
+                            <div className="col-md-3 mb-4">
+                                <div className="feature2-card p-3 h-100 pb-5">
+                                    <img src={item.image} alt={item.title} className='w-25 m-ato  mb-3 d-block' />
+                                    <h4 className="fs-5 fw-bold">{item.title}</h4>
+
+                                    <ul>
+                                        {
+                                            item.points.map((item, index)=>(
+                                                <li className="fs-6">{item}</li>
+                                            ))
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
         </section>
     </section>
   )

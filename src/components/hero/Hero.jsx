@@ -11,7 +11,7 @@ function Hero() {
             <div className="row align-items-center">
                 <div className="col-md-8">
                     <div className="hero-left">
-                        <h1 className="display-4 fw-8 text-main">Jumpstart <span className="text-main2">Your</span> <br /> <span className="dark-stroke">Full-Stack</span> Development  Career with a <br /> <span className="text-main2">3-Month <span className="dark-stroke">Internship</span></span></h1>
+                        <h1 className="display-4 fw-8 text-main">Jumpstart Your <br /> <span className="text-main2">Full-Stack Development</span>   Career with a  <br /> 3-Month<span className="text-main2"> <span className="dark-stroke">Internship</span></span></h1>
                         <ul className="hero-points fs-6">
                             <li>Hands-on project experience in full-stack development.</li>
                             <li>Work with popular technologies like HTML, CSS, JavaScript, React, Node.js, MongoDB, etc.</li>
