@@ -26,10 +26,10 @@
 }
 .feature2{
     /* background: var(--dark-color); */
-    background: var(--secondarycolor);
+    background: var(--dark-color);
 }
 .feature2-card{
-    background: linear-gradient(#fff, #fff, #fff, var(--secondarycolor));
+    background: linear-gradient(#fff, #fff, #fff, var(--dark-color));
     /* min-height: 400px; */
     border-radius: 20px;
 }
@@ -40,5 +40,6 @@
 }
 .feature2-card li{
     margin-bottom: 10px;
+    font-weight: 600;
   
 }
