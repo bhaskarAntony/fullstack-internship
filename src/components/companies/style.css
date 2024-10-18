@@ -1,0 +1,38 @@
+.companies{
+    background-color: #fff;
+}
+
+
+
+/* CompanyCarousel.css */
+.company-carousel {
+    width: 90%;
+    margin: auto;
+}
+
+.company-slide {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+.company-slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0px 0px 10px #dbdbdb;
+}
+
+
+.company-images{
+    margin-top: 30px;
+}
+.company-images img{
+    width: 150px;
+    height: 50px !important;
+    object-fit: contain;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 100px;
+    /* filter: grayscale(50%); */
+}

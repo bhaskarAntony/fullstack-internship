@@ -2,16 +2,17 @@ import React, { Fragment, useState } from 'react';
 import axios from 'axios';
 import { Modal, Button } from 'react-bootstrap';
 import './style.css';
+import Loading from '../loading/Loading';
 
 function ApplyForm() {
   const [formData, setFormData] = useState({
     fullname: '',
     email: '',
     phonenumber: '',
-    experience: 'student',
     course: 'mern'
   });
-
+  const [isLoading, setIsLoading] = useState(false);
+ 
   const [showModal, setShowModal] = useState(false);
 
   const handleChange = (e) => {
@@ -21,22 +22,29 @@ function ApplyForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true)
     console.log("Submitting form with data:", formData); // Log the form data
     try {
-      const response = await axios.post('https://fullstack-landing-page-backend.onrender.com/api/new/lead', formData);
+      const response = await axios.post('https://fullstack-landing-page-backend.onrender.com/api/new/intern', formData);
       console.log('Response:', response.data);
+      setIsLoading(false)
       setShowModal(true);
     } catch (error) {
+      setIsLoading(false)
       console.error('Error submitting form:', error); // Log the error for better debugging
     }
   };
   
+  if(isLoading){
+    return <Loading/>
+  }
+
 
   const handleClose = () => setShowModal(false);
 
   return (
     <Fragment>
-      <div className="apply-form p-3 rounded">
+      <div className="apply-form p-3">
         <h1 className="fs-4 mb-3 fw-bold">Apply For Free Counselling</h1>
         <form onSubmit={handleSubmit}>
           <div className="form-group mt-1">
@@ -75,7 +83,7 @@ function ApplyForm() {
             />
           </div>
 
-          <div className="form-group mt-1">
+          {/* <div className="form-group mt-1">
             <label htmlFor="experience" className="form-label">Work Experience<span className="text-danger">*</span></label>
             <select 
               name="experience" 
@@ -88,7 +96,7 @@ function ApplyForm() {
               <option value="0-1">0-1 Year</option>
               <option value="1-2">1-2 Years</option>
             </select>
-          </div>
+          </div> */}
 
           <div className="form-group mt-1">
             <label htmlFor="course" className="form-label">Interested Course<span className="text-danger">*</span></label>

@@ -45,7 +45,7 @@ function Header() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse justify-content-end d-lg-flex d-none gap-2 align-items-center" id="navbarSupportedContent">
-            <ul className="navbar-nav">
+            {/* <ul className="navbar-nav">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#" onClick={() => scrollToSection('home')}>Home</a>
               </li>
@@ -64,7 +64,7 @@ function Header() {
               <li className="nav-item">
                 <button className="nav-link btn" onClick={() => scrollToSection('benefits')}>Benefits</button>
               </li>
-            </ul>
+            </ul> */}
             <form className="d-flex gap-2">
               <button className="main-btn" type="button" onClick={handleClick}>Apply Now</button>
             </form>
@@ -81,16 +81,16 @@ function Header() {
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <ul className='offcanvas-nav'>
+          {/* <ul className='offcanvas-nav'>
             <li><a href="#" onClick={() => scrollToSection('home')}>Home</a></li>
             <li><a href="#" onClick={() => scrollToSection('fullstack')}>Why Fullstack</a></li>
             <li><a href="#" onClick={() => scrollToSection('courses')}>Courses</a></li>
             <li><a href="#" onClick={() => scrollToSection('stories')}>Success Stories</a></li>
             <li><a href="#" onClick={() => scrollToSection('clients')}>Our Clients</a></li>
             <li><a href="#" onClick={() => scrollToSection('benefits')}>Benefits</a></li>
-          </ul>
-          <button className="main-btn w-100" onClick={handleClick}>Apply Now</button>
-          <div className="bg-light p-3 mt-3">
+          </ul> */}
+         
+          <div className="bg-light p-3">
             <h3 className="fs-6 fw-bold mt-3">Contact Us</h3>
             <hr />
             <p className='fs-6'>+91-9242079119</p>
@@ -101,6 +101,7 @@ function Header() {
               </address>
             </p>
           </div>
+          <button className="main-btn w-100" onClick={handleClick}>Apply Now</button>
         </Offcanvas.Body>
       </Offcanvas>
     </header>

@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
+import '../node_modules/slick-carousel/slick/slick.css';
+import '../node_modules/slick-carousel/slick/slick-theme.css';
 import { PopupProvider } from './context/PopupContext.jsx';
 
 

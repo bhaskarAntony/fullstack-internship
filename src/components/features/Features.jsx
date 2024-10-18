@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.css'
+import Companies from '../companies/Companies'
 
 function Features() {
     const data1 = [
@@ -62,6 +63,22 @@ function Features() {
             ],
             image:'https://cdn-icons-png.flaticon.com/128/9249/9249511.png'
         }
+    ]
+
+    const data3 = [
+                {
+                    heading:'Resume and profile building',
+                    image:'https://cdn-icons-png.freepik.com/256/6709/6709171.png?ga=GA1.2.1471963966.1728382128&semt=ais_hybrid',
+                    subtitle:['Assistance with crafting industry-ready resumes, LinkedIn profiles, and GitHub repositories.']
+                },
+                {
+                    heading:'Mock interviews',
+                    image:'https://cdn-icons-png.freepik.com/256/10998/10998244.png?ga=GA1.1.1471963966.1728382128&semt=ais_hybrid',
+                    subtitle:[
+                        'Focused on full-stack technical interviews, system design, and soft skills.',
+                        'Ongoing personalized job matching and job opening notifications based on your selected full-stack track.'
+                    ]
+                }
     ]
   return (
     <section className='features'>
@@ -127,6 +144,56 @@ function Features() {
                     }
                 </div>
         </section>
+
+        <center className='p-2 p-md-5'>
+        <div className="bar my-4"></div>
+        <div className="icon">
+        <i class="bi bi-3-circle-fill fs-1 text-main"></i>
+        
+        </div>
+        <div className="bar my-4"></div>
+        <h1 className="fs-3 fw-bold">Unlimited Placement <span className="text-main2">Opportunities</span></h1>
+        {/* <p className="fs-5 fw-bold ">Access to <span className="text-main2">390+ </span>Companies</p> */}
+        <p className="fs-5  fw-6">Leverage <span className="text-main2">unlimited placement opportunities</span> with our <span className="text-main2">390+ partner companies</span> actively looking <br /> for skilled full-stack developers.</p>
+        </center>
+        <Companies/>
+
+    <center className='p-3 p-md-5'>
+    <div className="bar my-4"></div>
+    <h1 className="fs-3 fw-bold mb-5">Comprehensive <span className="text-main2">Career Support</span></h1>
+    </center>
+
+    <section className="p-3 p-md-5 container-fluid light-bg1">
+        <div className="row">
+            {
+                data3.map((item, index)=>(
+                    <div className="col-md-6 mb-3">
+                        <div className="feature3-card   justify-content-between h-100 p-4 align-items-center gap-3">
+                       <div className="row align-items-center">
+                        <div className="col-md-2">
+                        <img src={item.image} alt={item.heading} className='mb-3' />
+                        </div>
+                        <div className="col-md-10">
+                        <div>
+
+                        <h1 className="fs-3 text-white fw-bold mb-5">{item.heading}</h1>
+                        <ul className="">
+                            {
+                                item.subtitle.map((item, index)=>(
+                                    <li className="fs-6 text-light mb-3">{item}</li>
+                                ))
+                            }
+                        </ul>
+                       </div>
+                        </div>
+                       </div>
+                      
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+    </section>
     </section>
   )
 }

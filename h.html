@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CURSOR</title>
+        <style>
+            center{
+                background-color: lightgray;
+                color: gray;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 3px 3px 3px #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>CSS CURSOR..!</h1>
+            <p>CSS cursor property used to define cursor type (i.e. mouse pointer) when the mouse moves over a certain area or, over a link on the webpage.</p>
+        </center>
+        <hr>
+
+        <p>SELECT CURSOR VALUE</p>
+        <select name="cursor" id="cursor" onchange="readValue()">
+            <option>auto</option>
+            <option>default</option>
+            <option>none</option>
+            <option>context-menu</option>
+            <option>help</option>
+            <option>pointer</option>
+            <option>progress</option>
+            <option>wait</option>
+            <option>cell</option>
+        </select>
+
+        <script>
+            let center = document.querySelector("center");
+            let select = document.querySelector("select");
+
+            function readValue(){
+                center.style.cursor = select.value;
+            }
+        </script>
+    </body>
+</html>

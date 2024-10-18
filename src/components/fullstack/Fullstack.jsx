@@ -1,7 +1,13 @@
 import React from 'react'
 import './style.css'
+import { usePopup } from '../../context/PopupContext';
 
 function Fullstack() {
+    const { openPopup } = usePopup();
+
+  const handleClick = () => {
+    openPopup(<div>This is your popup content!</div>); // Customize popup content here
+  };
     const courses = [
         {
             title:'MERN Full Stack',
@@ -21,7 +27,7 @@ function Fullstack() {
       <center className="my-3 p-3 p-md-5">
       <h1 className="fs-1 fw-bold">Full-Stack Development <br /> Training <span className="text-main2">+</span> Internship <span className="text-main2">+</span> Unlimited Placement  <span className="text-main2"> (₹20000/-)</span></h1>
 
-      <button className="main-btn mt-3">Check Now</button>
+      <button className="main-btn mt-3" onClick={handleClick}>Check Now</button>
     
       </center>
 
@@ -33,7 +39,7 @@ function Fullstack() {
                     courses.map((item, index)=>(
                        <div className="col-md-4 mb-3">
                          <div className="choose-card p-3 h-100 d-flex flex-column justify-content-between">
-                            <div className="view">
+                            <div className="view"onClick={handleClick}>
                             <i class="bi bi-arrow-up-right fs-3"></i>
                             </div>
                             <h1 className="fs-2 fw-bold title">{item.title}</h1>

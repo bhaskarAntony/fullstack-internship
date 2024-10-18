@@ -43,3 +43,15 @@
     font-weight: 600;
   
 }
+
+.feature3-card{
+    background-color: var(--dark-color);
+    border-radius: 20% 10px;
+}
+.feature3-card img{
+    width: 80px;
+    height: 80px;
+}
+.feature3-card ul{
+    list-style-image: url('../../images/double-check.png');
+}

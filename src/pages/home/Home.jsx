@@ -3,6 +3,8 @@ import './style.css'
 import Hero from '../../components/hero/Hero'
 import Fullstack from '../../components/fullstack/Fullstack'
 import Features from '../../components/features/Features'
+import Faqs from '../../components/faqs/Faqs'
+import Diffrence from '../../components/diffrence/Diffrence'
 
 function Home() {
   return (
@@ -49,10 +51,13 @@ function Home() {
                 </div>
             </marquee>
         </div>
+        <Diffrence/>
 
         <Fullstack/>
 
         <Features/>
+
+        <Faqs/>
     </div>
   )
 }

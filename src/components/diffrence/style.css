@@ -1,0 +1,34 @@
+.diffrence{
+    background-color: var(--dark-color);
+    min-height: 100vh;
+}
+.diffrence .row, .col-md-6{
+    min-height: fit-content;
+}
+.diffrence1{
+    background: var(--light1);
+    min-height: fit-content;
+    
+}
+.diffrence1 *{
+    color: #141414;
+ 
+}
+.diffrence2{
+    background: var(--light2);
+    min-height: fit-content;
+}
+.diffrence table, td, th{
+    border: 1px solid #050505;
+    padding: 15px;
+}
+.diffrence table{
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+   
+
+}
+.diffrence table tr:nth-child(even){
+    background-color: #ececec;
+}
